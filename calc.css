@@ -1,0 +1,97 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(1deg,rgb(67, 62, 62) , #9e9e9e);
+}
+
+.container {
+    background-color:hsl(0, 0%, 15%);
+    border-radius: 16px;
+    margin: 90px;
+    overflow: hidden;
+}
+
+.container hr {
+    border: 1px solid #333;
+}
+.container .result {
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.container .result p {
+    
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    position: absolute;
+    letter-spacing: 8px;
+    top: -30px;
+    left: 50px;
+}
+
+.container .col {
+    margin: 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.container .col .grays {
+    background-color:#d3d3d3de;
+    margin-right: 12px;
+}
+
+.container .col .oranges {
+    background-color: rgba(255, 166, 0, 0.87);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.container .col .oranges:hover{
+    background-color: #908282;
+    color: #fff;
+}
+
+.container .col .division {
+    font-size: 35px;
+    position: relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+}
+
+.container .col .multiplay {
+    font-size:40px;
+    font-weight: 100;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container .col button.num {
+    background-color: rgb(52, 52, 52);
+    color: white;
+}
+
+.container .col button {
+    border-radius: 50%;
+    font-size: 30px;
+    width: 85px;
+    height: 85px;
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+    margin-top: 20px;
+    transition: 0.2s ease;
+}
+
+.container .col button:hover{ 
+    background-color: #555;
+    color:white;
+}
