@@ -1,5 +1,6 @@
 * {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,8 +14,7 @@ body {
 .container {
     background-color:hsl(0, 0%, 15%);
     border-radius: 16px;
-    margin: 90px;
-    overflow: hidden;
+    margin: 20px;
 }
 
 .container hr {
@@ -40,6 +40,8 @@ body {
     margin: 30px 30px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    align-items: c;
+    justify-content: center;
 }
 
 .container .col .grays {
@@ -94,4 +96,24 @@ body {
 .container .col button:hover{ 
     background-color: #555;
     color:white;
+}
+
+
+@media (max-width:465px) {
+    
+    .container {
+        width: 420px
+    }
+
+}
+
+@media (max-width:429px) {
+    .container {
+        width: 370px;
+    }
+    .container .col button {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
 }
